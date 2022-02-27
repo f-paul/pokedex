@@ -25,7 +25,7 @@ The goal of this project was to recreate a pokedex using the API: https://pokeap
 
 #### Back-End:
 
-**:warning: Start it before the front**
+**:warning: Start it before the front.**
 The API is exposed on the port 8080.
 To start the API you need to do the following command :
 
