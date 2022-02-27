@@ -43,7 +43,7 @@ To access the Pokedex you need to do the following command :
 ```bash=
 cd web_client
 npm i         #install all the dependencies
-npm start     #start the API
+npm start     #start the client
 ```
 
 Then go to `http://localhost:3000/`
