@@ -1,5 +1,4 @@
-# Pokedex for  
-
+# Pokedex
 The goal of this project was to recreate a pokedex using the API: https://pokeapi.co/api/v2/.
 
 ![](https://i.imgur.com/dmWpWeX.jpg)
