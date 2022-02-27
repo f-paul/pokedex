@@ -14,14 +14,14 @@ The goal of this project was to recreate a pokedex using the API: https://pokeap
 - [Start the project](#start)
 - [API Routes](#api)
 
-## Installation
+## :arrow_down: Installation
 - Download https://nodejs.org/en/
 - Download https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 
 **Note:** Use NodeJS with a version >= v16.13.2 and NPM >= 8.1.2
 
-## Start the project
+## :rocket: Start the project
 
 #### Back-End:
 
@@ -48,7 +48,7 @@ npm start     #start the client
 
 Then go to `http://localhost:3000/`
 
-## API Routes
+## :bellhop_bell: API Routes
 
 GET `/pokemon/`
 
