@@ -1,11 +1,11 @@
-import { Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material'
+import { Card, CardActionArea, CardMedia, CardContent, Typography, Chip } from '@mui/material'
 
 function firstLetterUppercase(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
 export function PokemonCard(props) {
-    const {name, icon, type, description, id} = props;
+    const { name, icon, type, id, height, weight, xp } = props;
 
     const colours = {
         normal: '#A8A77A',
@@ -28,6 +28,27 @@ export function PokemonCard(props) {
         fairy: '#D685AD',
     };
 
+    const emoji = {
+        normal: '',
+        fire: '🔥',
+        water: '💧',
+        electric: '⚡️',
+        grass: '🌿',
+        ice: '❄️',
+        fighting: '🥊',
+        poison: '🧪',
+        ground: '',
+        flying: '👼🏻',
+        psychic: '',
+        bug: '🧲',
+        rock: '⛰',
+        ghost: '👻',
+        dragon: '🐉',
+        dark: '⬛️',
+        steel: '',
+        fairy: '🧚‍♀️',
+    }
+
     return (
         <>
             <Card sx={{ maxWidth: 345 }} style={{backgroundColor: colours[type]}}>
@@ -36,14 +57,19 @@ export function PokemonCard(props) {
                     component="img"
                     height="140"
                     image={icon}
-                    alt="green iguana"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        { firstLetterUppercase(name)} | {'#' + id}
+                        {'#' + id} | { firstLetterUppercase(name)}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Type : {firstLetterUppercase(type)}
+                    <Chip label={emoji[type] + ' ' + firstLetterUppercase(type)} style={{ backgroundColor: '#002884'}, {fontColor: '#000000'}}>
+                        
+                    </Chip>
+                    <Typography>
+                        Height: {height} | Weight: {weight}
+                    </Typography>
+                    <Typography>
+                        Base Experiences: {xp}
                     </Typography>
                     </CardContent>
                 </CardActionArea>

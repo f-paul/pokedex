@@ -22,6 +22,8 @@ export class AppController {
 
   @Get('/pokemons/:id')
   getSinglePokemon(@Param() params) {
+    if (params == 0)
+      return '';
     return this.appService.getSinglePokemon(params.id);
   }
 }
