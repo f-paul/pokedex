@@ -24,7 +24,6 @@ function SearchSpecificPokemon() {
             );
         }
         try {
-            console.log('inside1 ->' + pokemon + '<-');
             const url = 'http://localhost:8080/pokemons/' + pokemon;
             const response = await fetch(url);
             const json = await response.json();
